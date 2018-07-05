@@ -133,7 +133,7 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/repository/example3',
     name: 'Repository',
-    meta: { title: '版本库', icon: 'yingyong' },
+    meta: { title: '版本库', icon: 'banben' },
     children: [
       {
         path: 'example1',

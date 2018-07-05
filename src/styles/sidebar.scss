@@ -46,22 +46,22 @@
   }
   .hideSidebar {
     .sidebar-container {
-      width: 36px !important;
+      width: 54px !important;
     }
     .main-container {
-      margin-left: 36px;
+      margin-left: 54px;
     }
     .submenu-title-noDropdown {
-      padding-left: 10px !important;
+      padding-left: 20px !important;
       position: relative;
       .el-tooltip {
-        padding: 0 10px !important;
+        padding: 0 20px !important;
       }
     }
     .el-submenu {
       overflow: hidden;
       &>.el-submenu__title {
-        padding-left: 10px !important;
+        padding-left: 20px !important;
         .el-submenu__icon-arrow {
           display: none;
         }
@@ -80,6 +80,11 @@
         }
       }
     }
+    .logo-container {
+      span {
+        display: none;
+      }
+    }
   }
   .sidebar-container .nest-menu .el-submenu>.el-submenu__title,
   .sidebar-container .el-submenu .el-menu-item {
@@ -91,6 +96,21 @@
   }
   .el-menu--collapse .el-menu .el-submenu {
     min-width: 256px !important;
+  }
+  .sidebar-container .el-submenu>.el-submenu__title {
+    min-width: 256px !important;
+    background-color: $menuBg !important;
+    &:hover {
+      background-color: $menuHover !important;
+    }
+  }
+  .logo-container {
+    padding-left: 20px;
+    color: #ffffff;
+    background-color: #002140;
+    height: 64px;
+    line-height: 64px;
+    box-shadow: 0 2px 7px 0 rgba(0,21,41,0.03);
   }
 
   //适配移动端
@@ -116,3 +136,7 @@
     }
   }
 }
+
+.el-menu--popup .el-menu-item:hover {
+    background-color: $menuHover !important;
+  }
