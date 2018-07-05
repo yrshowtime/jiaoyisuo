@@ -72,6 +72,90 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/resource',
+    component: Layout,
+    redirect: '/resource/example1',
+    name: 'Resource',
+    meta: { title: '资源管理', icon: 'ziyuan' },
+    children: [
+      {
+        path: 'example1',
+        name: 'Example1',
+        component: () => import('@/views/example1/index'),
+        meta: { title: 'Example1' }
+      },
+      {
+        path: 'example2',
+        name: 'Example2',
+        component: () => import('@/views/example2/index'),
+        meta: { title: 'Example2' }
+      },
+      {
+        path: 'example3',
+        name: 'Example3',
+        component: () => import('@/views/example3/index'),
+        meta: { title: 'Example3' }
+      }
+    ]
+  },
+
+  {
+    path: '/apply',
+    component: Layout,
+    redirect: '/apply/example2',
+    name: 'Apply',
+    meta: { title: '应用管理', icon: 'yingyong' },
+    children: [
+      {
+        path: 'example1',
+        name: 'Example1',
+        component: () => import('@/views/example1/index'),
+        meta: { title: 'Example1' }
+      },
+      {
+        path: 'example2',
+        name: 'Example2',
+        component: () => import('@/views/example2/index'),
+        meta: { title: 'Example2' }
+      },
+      {
+        path: 'example3',
+        name: 'Example3',
+        component: () => import('@/views/example3/index'),
+        meta: { title: 'Example3' }
+      }
+    ]
+  },
+
+  {
+    path: '/repository',
+    component: Layout,
+    redirect: '/repository/example3',
+    name: 'Repository',
+    meta: { title: '版本库', icon: 'yingyong' },
+    children: [
+      {
+        path: 'example1',
+        name: 'Example1',
+        component: () => import('@/views/example1/index'),
+        meta: { title: 'Example1' }
+      },
+      {
+        path: 'example2',
+        name: 'Example2',
+        component: () => import('@/views/example2/index'),
+        meta: { title: 'Example2' }
+      },
+      {
+        path: 'example3',
+        name: 'Example3',
+        component: () => import('@/views/example3/index'),
+        meta: { title: 'Example3' }
+      }
+    ]
+  },
+
   { path: '*', redirect: '/404', hidden: true }
 ]
 
