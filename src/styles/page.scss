@@ -2,3 +2,36 @@
   background-color: #fff;
   padding-left: 12px;
 }
+.container-title{
+  background: #fff;
+  padding-left: 22px;
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.container-body{
+  .el-tabs__nav-scroll{
+    padding: 0px 22px;
+    background: #fff;
+  }
+  .el-tabs__content{
+    margin: 0px 22px;
+    background: #fff;
+    min-height: 100%;
+  }
+  .tabs-contents{
+    padding: 30px;
+  }
+  .tabs-contents .el-table th{
+    background-color: #fafafa;
+    font-weight: normal;
+    border-bottom: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    color: #000;
+  }
+  .tabs-contents .el-table tr{
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+  }
+}

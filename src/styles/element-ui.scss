@@ -29,6 +29,12 @@
 }
 
 .el-menu--horizontal {
-  box-shadow: 0 0 26px #cfd4e4;
+  box-shadow: 0 0 5px #cfd4e4;
   border-bottom: none;
+}
+.app-breadcrumb.el-breadcrumb{
+  line-height: 50px !important
+}
+.el-tabs__nav-wrap::after{
+  height: 1px;
 }
