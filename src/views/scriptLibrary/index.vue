@@ -3,7 +3,7 @@
     <div>
       <breadcrumb></breadcrumb>
     </div>
-    example1sdasda
+    script
   </div>
 </template>
 

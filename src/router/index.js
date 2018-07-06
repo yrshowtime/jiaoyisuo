@@ -136,10 +136,10 @@ export const constantRouterMap = [
     meta: { title: '版本库', icon: 'banben' },
     children: [
       {
-        path: 'example1',
-        name: 'Example1',
-        component: () => import('@/views/example1/index'),
-        meta: { title: 'Example1' }
+        path: 'script',
+        name: '脚本库',
+        component: () => import('@/views/scriptLibrary/index'),
+        meta: { title: '脚本库' }
       },
       {
         path: 'example2',
