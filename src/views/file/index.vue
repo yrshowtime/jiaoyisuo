@@ -25,7 +25,7 @@
       <!-- 文件展示部分 -->
       <div class="file-container">
         <div class="file-info">17kb</div>
-        <div class="file-content"></div>
+        <div class="file-content" id="file-content"></div>
       </div>
     </div>
   </div>
@@ -33,6 +33,7 @@
 
 <script>
 import CodeMirror from 'codemirror'
+import 'codemirror/lib/codemirror.css'
 
 export default {
   data() {
@@ -52,7 +53,11 @@ export default {
     }
   },
   mounted() {
-    // CodeMirror.
+    CodeMirror(document.getElementById('file-content'), {
+      value: this.fileContent.replace(/↵/g, '\n'),
+      mode: 'javascript',
+      lineNumbers: true
+    })
   }
 }
 </script>
