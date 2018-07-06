@@ -152,6 +152,12 @@ export const constantRouterMap = [
         name: 'Example3',
         component: () => import('@/views/example3/index'),
         meta: { title: 'Example3' }
+      },
+      {
+        path: 'script-file',
+        name: '脚本库-文件',
+        component: () => import('@/views/file/index'),
+        hidden: true
       }
     ]
   },
